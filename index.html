@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AFAH MKA LTD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001510;
+      color: #E0F7F1;
+      line-height: 1.6;
+    }
+    #preloader {
+      background: #000;
+      color: #66CDAA;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 10000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    nav {
+      background: #00332F;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #A7FFEB;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    nav .logo img {
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #66CDAA;
+    }
+    nav .links {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #A7FFEB;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #66CDAA;
+    }
+    header {
+      height: 90vh;
+      background-image: url('IMG-20250517-WA0042.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+    header h1 {
+      font-size: 3.5em;
+      color: #66CDAA;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #66CDAA;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #80CBC4;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .service-box {
+      background: #004D40;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-6px);
+    }
+    .service-box h3 {
+      margin-bottom: 12px;
+      color: #A7FFEB;
+    }
+    .service-box p {
+      font-size: 1.1em;
+      color: #B2DFDB;
+      text-align: justify;
+    }
+    .contact-info {
+      background: #002922;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      color: #B2DFDB;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+    .contact-info p {
+      margin-bottom: 14px;
+    }
+    .contact-info a {
+      color: #66CDAA;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #00332F;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #A7FFEB;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      nav .links {
+        display: none;
+      }
+      header h1 {
+        font-size: 2.2em;
+      }
+      section h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="preloader">Loading AFAH MKA LTD...</div>
+
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="AFAH MKA Logo" />
+      AFAH MKA
+    </div>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Modern Construction & Tech Solutions</h1>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.2em; color: #B2DFDB;">
+      AFAH MKA LTD is a trusted company with extensive experience in <strong>crypto investing, KYC services</strong>, and <strong>building construction</strong>. We combine technology and innovation to deliver reliable and modern solutions tailored to our clients' needs.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Crypto Investing</h3>
+        <p>We provide expert guidance and secure solutions for cryptocurrency investments, helping you grow your digital assets safely.</p>
+      </div>
+      <div class="service-box">
+        <h3>KYC Services</h3>
+        <p>Reliable Know Your Customer (KYC) verification services to ensure compliance and security for your business operations.</p>
+      </div>
+      <div class="service-box">
+        <h3>Building Construction</h3>
+        <p>Modern and durable building construction services for residential, commercial, and industrial projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:Afahmkaconstruction@gmail.com">Afahmkaconstruction@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+2347035422978">07035422978</a></p>
+      <p><strong>Address:</strong> NO 11, DANLAMI SANI MAINAGGE A, GADON KAYA, KANO</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/5E77OZSXZGOQG1" target="_blank" rel="noopener noreferrer">Contact us on WhatsApp</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 AFAH MKA LTD. All rights reserved.
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("preloader").style.display = "none";
+    });
+  </script>
+</body>
+  </html>
