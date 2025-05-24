@@ -47,9 +47,14 @@
       gap: 12px;
     }
     nav .logo img {
-      height: 40px;
+      height: 50px;
+      transform: rotate(-8deg);
       border-radius: 50%;
-      box-shadow: 0 0 8px #66CDAA;
+      box-shadow: 0 0 12px #66CDAA;
+      transition: transform 0.3s ease;
+    }
+    nav .logo img:hover {
+      transform: rotate(0deg) scale(1.05);
     }
     nav .links {
       display: flex;
@@ -75,11 +80,22 @@
       align-items: center;
       text-align: center;
       padding: 20px;
-      text-shadow: 2px 2px 8px #000;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
     header h1 {
       font-size: 3.5em;
       color: #66CDAA;
+      z-index: 2;
+      position: relative;
+      text-shadow: 2px 2px 8px #000;
     }
     section {
       padding: 60px 20px;
@@ -191,7 +207,7 @@
   <section id="about">
     <h2>About Us</h2>
     <p style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.2em; color: #B2DFDB;">
-      AFAH MKA LTD is a trusted company with extensive experience in <strong>crypto investing, KYC services</strong>, and <strong>building construction</strong>. We combine technology and innovation to deliver reliable and modern solutions tailored to our clients' needs.
+      AFAH MKA LTD is a trusted company with extensive experience in <strong>crypto investing</strong>, <strong>KYC services</strong>, and <strong>building construction</strong>. We combine technology and innovation to deliver reliable and modern solutions tailored to our clients' needs.
     </p>
   </section>
 
@@ -209,6 +225,18 @@
       <div class="service-box">
         <h3>Building Construction</h3>
         <p>Modern and durable building construction services for residential, commercial, and industrial projects.</p>
+      </div>
+      <div class="service-box">
+        <h3>Consultancy</h3>
+        <p>Professional consulting in tech, construction, and crypto to guide your strategic decisions and investments.</p>
+      </div>
+      <div class="service-box">
+        <h3>Project Supervision</h3>
+        <p>Expert supervision and project management to ensure timely, quality, and cost-effective project delivery.</p>
+      </div>
+      <div class="service-box">
+        <h3>Training & Mentorship</h3>
+        <p>Empowering individuals and businesses through training programs in blockchain, investment, and tech skills.</p>
       </div>
     </div>
   </section>
@@ -233,4 +261,4 @@
     });
   </script>
 </body>
-  </html>
+</html>
